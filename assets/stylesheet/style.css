@@ -157,6 +157,7 @@ table {
   height: 50rem;
   width: 50rem;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  /* border-radius: 50%; */
 }
 
 .home .content {
@@ -217,6 +218,7 @@ table {
   line-height: 2;
   color: #aaa;
   padding: 1rem 0;
+  text-transform: none;
 }
 
 .contact .row .info-container .box-container {
@@ -429,11 +431,13 @@ table {
   color: #fff;
   padding: 1rem 0;
   font-weight: normal;
+  text-transform: none;
 }
 
 .about .row .info-container .box-container .box h3 span {
   color: #aaa;
   font-weight: lighter;
+  
 }
 
 .about .row .count-container {
@@ -508,20 +512,13 @@ table {
 }
 
 .education .box-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .education .box-container .box {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
-  margin-left: 2rem;
-  padding-top: 0;
-  padding-bottom: 3rem;
+  flex: 1 1 15rem;
+  margin-left: 45rem;
   padding-left: 3.5rem;
   border-left: 0.1rem solid #aaa;
   position: relative;
@@ -580,6 +577,7 @@ table {
   height: 30rem;
   overflow: hidden;
   position: relative;
+  background-color: #1a1a1a;
 }
 
 .portfolio .box-container .box:hover .content {
@@ -621,23 +619,25 @@ table {
   transition: .2s linear;
 }
 
-.portfolio .box-container .box .content h3 {
+.portfolio .box-container .box h3 {
   font-size: 2.5rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 10rem;
 }
 
-.portfolio .box-container .box .content p {
+.portfolio .box-container .box p {
   padding: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2;
   color: #aaa;
 }
 
-.portfolio .box-container .box .content a {
+.portfolio .box-container .box a {
   font-size: 2rem;
   color: crimson;
+  margin: 1rem;
 }
 
 .portfolio .box-container .box .content a:hover {
@@ -758,13 +758,11 @@ section {
   padding-right: .5rem;
 }
 
-.navbar a:hover {
-  background: crimson;
-  /* padding-bottom: 6rem; */
+.navbar a.active{
+  background-color: crimson;
 }
-
-.navbar a:hover i {
-  color: #fff;
+.navbar a.active i{
+  color: white;
 }
 
 @media (max-width: 1200px) {
