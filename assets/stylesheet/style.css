@@ -381,6 +381,7 @@ table {
   color: #aaa;
   padding: 1rem 0;
   line-height: 2;
+  text-transform: none;
 }
 
 .about .row {
@@ -576,7 +577,7 @@ table {
   height: 30rem;
   overflow: hidden;
   position: relative;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
 }
 
 .portfolio .box-container .box:hover .content {
@@ -623,7 +624,7 @@ table {
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .portfolio .box-container .box p {
